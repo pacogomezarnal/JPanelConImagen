@@ -23,7 +23,9 @@ public class JPanelFondo extends JPanel{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(image, 20, 0, this); // see javadoc for more info on the parameters            
+        int width=this.getWidth();
+        int heigh=this.getHeight();
+        g.drawImage(image, 0, 0, width, heigh, this); // see javadoc for more info on the parameters            
     }
 
 }
